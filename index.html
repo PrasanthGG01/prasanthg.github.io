@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prasanth G | Data Analyst</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">Prasanth <span>G</span></a>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#work" class="nav-link">Power BI Works</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#resume" class="nav-link resume-btn">Resume</a></li>
+            </ul>
+            <button class="hamburger" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h5 class="subtitle animate-text">Certified Data Analyst</h5>
+                    <h1 class="hero-title animate-text">Hi, I'm <span class="gradient-text">Prasanth G</span>. I build dashboards that drive decisions.</h1>
+                    <p class="hero-description animate-text">Transforming raw data into actionable insights using <span class="highlight">Power BI</span>, <span class="highlight">Excel</span>, <span class="highlight">MySQL</span>, and <span class="highlight">Python</span>.</p>
+                    <div class="hero-buttons animate-text">
+                        <a href="#work" class="btn btn-primary">View My Work</a>
+                        <a href="https://www.linkedin.com/in/prasanth--g/" target="_blank" class="btn btn-secondary">
+                            <i class="fab fa-linkedin"></i> LinkedIn
+                        </a>
+                        <a href="Prasanth_Resume.pdf" class="btn btn-secondary" download>
+                            <i class="fas fa-file-pdf"></i> Download Resume
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image animate-text">
+                    <div class="image-wrapper">
+                        <!-- Profile Photo -->
+                        <img src="profile.jpg" alt="Prasanth G - Data Analyst" class="profile-img">
+                        <div class="glow-effect"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Power BI Works Section -->
+    <section id="work" class="section works">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Power BI <span class="gradient-text">Works</span></h2>
+                <p class="section-subtitle">Interactive dashboards that transform complex data into clear insights</p>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card animate-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-chart-bar"></i>
+                            <span>HR Analytics Dashboard</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">HR Analytics Dashboard</h3>
+                        <p class="project-description">Created an interactive dashboard to analyze employee demographics, department performance, and geographic distribution. Revealed insights into diversity, gender balance, and hiring trends—guiding HR decisions.</p>
+                        <div class="tech-chips">
+                            <span class="tech-chip">Power BI</span>
+                            <span class="tech-chip">Advanced Excel</span>
+                            <span class="tech-chip">Statistics</span>
+                            <span class="tech-chip">DAX</span>
+                        </div>
+                        <div class="project-buttons">
+                            <button class="btn btn-primary btn-small request-btn" data-project="HR Analytics Dashboard">Request PBIX</button>
+                            <a href="#contact" class="btn btn-secondary btn-small">Hire Me</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-card animate-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span>Purchase Pattern Analytics</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Purchase Pattern Analytics Dashboard</h3>
+                        <p class="project-description">Developed market basket analysis dashboards to track revenue, sales, and transactions by market and product. Uncovered top-selling products and geographic buying patterns, enabling strategic business decisions.</p>
+                        <div class="tech-chips">
+                            <span class="tech-chip">Power BI</span>
+                            <span class="tech-chip">Data Analysis</span>
+                            <span class="tech-chip">Data Visualization</span>
+                            <span class="tech-chip">Market Research</span>
+                        </div>
+                        <div class="project-buttons">
+                            <button class="btn btn-primary btn-small request-btn" data-project="Purchase Pattern Analytics">Request PBIX</button>
+                            <a href="#contact" class="btn btn-secondary btn-small">Hire Me</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="project-card animate-card code-style">
+                    <div class="project-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Medical Data History (SQL)</h3>
+                        <p class="project-description">Designed a relational database for healthcare analytics, managing patient, admission, and staff details. Engineered complex SQL queries to filter and aggregate clinical and operational metrics.</p>
+                        <div class="code-snippet">
+                            <pre><code>-- Patient admission analysis
+SELECT patient_id, 
+    admission_type,
+    COUNT(*) AS total_admissions,
+    AVG(length_of_stay) AS avg_stay_days
+FROM patient_admissions
+WHERE admission_date >= '2023-01-01'
+GROUP BY patient_id, admission_type
+ORDER BY total_admissions DESC;</code></pre>
+                        </div>
+                        <div class="tech-chips">
+                            <span class="tech-chip">MySQL</span>
+                            <span class="tech-chip">SQL Queries</span>
+                            <span class="tech-chip">Database Design</span>
+                            <span class="tech-chip">Healthcare Analytics</span>
+                        </div>
+                        <div class="project-buttons">
+                            <button class="btn btn-primary btn-small request-btn" data-project="Medical Data History">Request SQL Queries</button>
+                            <a href="#contact" class="btn btn-secondary btn-small">Hire Me</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Analytical <span class="gradient-text">Skills</span></h2>
+                <p class="section-subtitle">Technologies and methodologies I use to extract insights from data</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card animate-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="skill-title">Data Analysis & BI</h3>
+                    <p class="skill-description">SQL Queries, Data Cleaning, Forecasting, Predictive Modelling, Statistical Analysis, Data Interpretation</p>
+                    <div class="skill-tags">
+                        <span>SQL</span>
+                        <span>Data Cleaning</span>
+                        <span>Forecasting</span>
+                    </div>
+                </div>
+                <div class="skill-card animate-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3 class="skill-title">Visualization Tools</h3>
+                    <p class="skill-description">Power BI (DAX, KPI Dashboards), Tableau, Interactive Dashboards, Data Storytelling</p>
+                    <div class="skill-tags">
+                        <span>Power BI</span>
+                        <span>DAX</span>
+                        <span>Tableau</span>
+                    </div>
+                </div>
+                <div class="skill-card animate-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <h3 class="skill-title">Programming & Tools</h3>
+                    <p class="skill-description">Python (Pandas, NumPy), Git, Data Manipulation, Statistical Analysis, Automation Scripts</p>
+                    <div class="skill-tags">
+                        <span>Python</span>
+                        <span>Pandas</span>
+                        <span>Git</span>
+                    </div>
+                </div>
+                <div class="skill-card animate-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-file-excel"></i>
+                    </div>
+                    <h3 class="skill-title">Advanced Excel</h3>
+                    <p class="skill-description">Pivot Tables, VLOOKUP, Macros, Data Validation, Advanced Formulas, Business Modeling</p>
+                    <div class="skill-tags">
+                        <span>Pivot Tables</span>
+                        <span>VLOOKUP</span>
+                        <span>Macros</span>
+                    </div>
+                </div>
+                <div class="skill-card animate-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3 class="skill-title">Business Intelligence</h3>
+                    <p class="skill-description">Reporting, Trend Analysis, KPI Tracking, Dashboard Design, Data-Driven Decision Making</p>
+                    <div class="skill-tags">
+                        <span>KPI Tracking</span>
+                        <span>Trend Analysis</span>
+                        <span>Reporting</span>
+                    </div>
+                </div>
+                <div class="skill-card animate-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3 class="skill-title">Database Management</h3>
+                    <p class="skill-description">MySQL, Database Design, Query Optimization, Data Warehousing, ETL Processes</p>
+                    <div class="skill-tags">
+                        <span>MySQL</span>
+                        <span>Database Design</span>
+                        <span>ETL</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+                <p class="section-subtitle">Professional summary, education, and career objectives</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text animate-card">
+                    <h3 class="about-title">Professional Summary</h3>
+                    <p>Data Analyst, currently pursuing certification in Data Analyst, with a strong foundation in Power BI, Advanced Excel, MySQL, and basic Python (Pandas). Skilled in statistical analysis, data visualization, and transforming raw data into actionable insights.</p>
+                    <p>Passionate about building interactive dashboards, identifying trends, and supporting data-driven decision-making through analytical problem-solving. Demonstrated adaptability by integrating complex datasets from retail, HR, medical, and e-commerce domains.</p>
+                    
+                    <h3 class="about-title">Internship Experience</h3>
+                    <div class="experience-item">
+                        <h4>Rubixe - AI Solutions Company</h4>
+                        <p class="position">Data Analyst Intern | Aug 2025 - Dec 2025</p>
+                        <ul class="experience-list">
+                            <li>Contributed to advanced analytics projects leveraging machine learning, Power BI, and SQL for business and healthcare clients</li>
+                            <li>Applied automated data processing, DAX, and dashboard best practices to optimize reporting, KPI tracking, and business intelligence processes</li>
+                            <li>Integrated complex datasets from retail, HR, medical, and e-commerce domains, ensuring comprehensive analytics coverage</li>
+                        </ul>
+                    </div>
+                    
+                    <h3 class="about-title">Open to Roles</h3>
+                    <div class="roles-chips">
+                        <span class="role-chip">Data Analyst</span>
+                        <span class="role-chip">Business Intelligence Analyst</span>
+                        <span class="role-chip">Power BI Developer</span>
+                        <span class="role-chip">Reporting Analyst</span>
+                        <span class="role-chip">SQL Developer</span>
+                    </div>
+                </div>
+                <div class="about-details animate-card">
+                    <h3 class="about-title">Education</h3>
+                    <div class="education-item">
+                        <h4>B.E. Mechatronics Engineering</h4>
+                        <p class="institution">SNS College of Technology | Aug 2021 - May 2024</p>
+                    </div>
+                    <div class="education-item">
+                        <h4>Diploma in Mechanical Engineering</h4>
+                        <p class="institution">Sankara Polytechnic College | Jun 2017 - Apr 2020</p>
+                    </div>
+                    
+                    <h3 class="about-title">Certifications</h3>
+                    <div class="certifications">
+                        <div class="cert-item">
+                            <i class="fas fa-certificate"></i>
+                            <div>
+                                <span class="cert-title">Certified Data Analyst (CDA)</span>
+                                <span class="cert-org">Datamites Global Institute | Jun 2025 - Oct 2025</span>
+                            </div>
+                        </div>
+                        <div class="cert-item">
+                            <i class="fas fa-certificate"></i>
+                            <div>
+                                <span class="cert-title">Certified Data Analyst</span>
+                                <span class="cert-org">NASSCOM</span>
+                            </div>
+                        </div>
+                        <div class="cert-item">
+                            <i class="fas fa-certificate"></i>
+                            <div>
+                                <span class="cert-title">Python Basics for Data Science</span>
+                                <span class="cert-org">IBM</span>
+                            </div>
+                        </div>
+                        <div class="cert-item">
+                            <i class="fas fa-certificate"></i>
+                            <div>
+                                <span class="cert-title">Introduction to Internet of Things</span>
+                                <span class="cert-org">NPTEL</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="resume-download">
+                        <a href="Prasanth_Resume.pdf" class="btn btn-primary" download>
+                            <i class="fas fa-download"></i> Download Full Resume
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+                <p class="section-subtitle">Let's discuss how data can drive your business forward</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info animate-card">
+                    <h3 class="contact-title">Contact Details</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <a href="mailto:prasanthgg2002@gmail.com">prasanthgg2002@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <a href="tel:+917904815652">+91 79048 15652</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Coimbatore, Tamil Nadu</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <div>
+                            <h4>LinkedIn</h4>
+                            <a href="https://www.linkedin.com/in/prasanth--g/" target="_blank">linkedin.com/in/prasanth--g</a>
+                        </div>
+                    </div>
+                    
+                    <h3 class="contact-title availability">Currently Seeking</h3>
+                    <div class="availability-status">
+                        <div class="status-indicator available"></div>
+                        <span>Open to Data Analyst roles and internships</span>
+                    </div>
+                </div>
+                
+                <div class="contact-form animate-card">
+                    <h3 class="contact-title">Send a Message</h3>
+                    <form id="demoForm">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="section resume">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My <span class="gradient-text">Resume</span></h2>
+                <p class="section-subtitle">Download my detailed resume for complete professional information</p>
+            </div>
+            <div class="resume-content animate-card">
+                <div class="resume-preview">
+                    <div class="resume-icon">
+                        <i class="fas fa-file-pdf"></i>
+                    </div>
+                    <h3>Prasanth G - Data Analyst Resume</h3>
+                    <p>PDF Document | Updated January 2024</p>
+                    <div class="resume-download-buttons">
+                        <a href="Prasanth_Resume.pdf" class="btn btn-primary" download>
+                            <i class="fas fa-download"></i> Download Resume PDF
+                        </a>
+                        <a href="Prasanth_Resume.pdf" target="_blank" class="btn btn-secondary">
+                            <i class="fas fa-eye"></i> View Online
+                        </a>
+                    </div>
+                    <p class="resume-note"><small>File size: ~25 KB | Format: PDF</small></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="#" class="logo">Prasanth<span>G</span></a>
+                    <p class="footer-tagline">Transforming data into decisions</p>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/prasanth--g/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/prasanthg" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="mailto:prasanthgg2002@gmail.com"><i class="fas fa-envelope"></i></a>
+                        <a href="Prasanth_Resume.pdf" download><i class="fas fa-file-pdf"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#work">Power BI Works</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#resume">Resume</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Data Insights</h4>
+                    <p>Get insights on data analytics and visualization</p>
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="Your email">
+                        <button type="button" class="btn btn-primary btn-small" id="subscribeBtn">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> Prasanth G. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Request Modal -->
+    <div class="modal" id="requestModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h3>Request Project Files</h3>
+            <p>Please provide your details to request the <span id="projectName"></span> files.</p>
+            <form id="requestForm">
+                <div class="form-group">
+                    <input type="text" id="requestName" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="requestEmail" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="requestMessage" rows="3" placeholder="Additional requirements (optional)"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Request</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
